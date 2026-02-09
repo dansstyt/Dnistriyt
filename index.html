@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dnsydha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+    
+    <!-- Aurora Background -->
+    <div class="aurora">
+        <div class="aurora-layer aurora-1"></div>
+        <div class="aurora-layer aurora-2"></div>
+        <div class="aurora-layer aurora-3"></div>
+    </div>
+
+    <!-- Morphing Background Shapes -->
+    <div class="morph-container">
+        <div class="morph-blob blob-1"></div>
+        <div class="morph-blob blob-2"></div>
+        <div class="morph-blob blob-3"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div class="loading-aurora">
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+            <div class="loading-circle"></div>
+        </div>
+        <h2 class="loading-text">Loading....</h2>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="active-section">
+            <!-- Profile 3D Card -->
+            <div class="profile-3d-card" data-tilt>
+                <div class="card-inner">
+                    <div class="hologram-effect"></div>
+                    <img src="singa.jpg" alt="Profile" class="profile-avatar">
+                    <div class="profile-glow-ring"></div>
+                </div>
+            </div>
+
+            <!-- Holographic Title -->
+            <h1 class="holo-title" data-text="AURORA">DANIS TRI YUDHA T</h1>
+            <p class="tagline">Intelligence, Strength, and style are the elements that make up a Gentleman</p>
+
+            <!-- Floating Island Menu -->
+            <div class="island-menu">
+                <div class="island-card" data-tilt onclick="navigateTo('about')">
+                    <div class="island-glow"></div>
+                    <div class="island-content">
+                        <span class="island-emoji">✨</span>
+                        <h3>About</h3>
+                        <p>Discover who I am</p>
+                    </div>
+                    <div class="island-shine"></div>
+                </div>
+
+                <div class="island-card" data-tilt onclick="navigateTo('journey')">
+                    <div class="island-glow"></div>
+                    <div class="island-content">
+                        <span class="island-emoji">🚀</span>
+                        <h3>Journey</h3>
+                        <p>My path & achievements</p>
+                    </div>
+                    <div class="island-shine"></div>
+                </div>
+
+                <div class="island-card" data-tilt onclick="navigateTo('connect')">
+                    <div class="island-glow"></div>
+                    <div class="island-content">
+                        <span class="island-emoji">💫</span>
+                        <h3>Connect</h3>
+                        <p>Let's collaborate</p>
+                    </div>
+                    <div class="island-shine"></div>
+                </div>
+
+                <div class="island-card" data-tilt onclick="navigateTo('gallery')">
+                    <div class="island-glow"></div>
+                    <div class="island-content">
+                        <span class="island-emoji">🎨</span>
+                        <h3>Gallery</h3>
+                        <p>Visual stories</p>
+                    </div>
+                    <div class="island-shine"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <button class="back-floating" onclick="navigateTo('home')">
+                <span>←</span>
+            </button>
+
+            <div class="section-header">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="neuro-grid">
+                <div class="neuro-card" data-aos>
+                    <div class="neuro-icon">👤</div>
+                    <h4>Myself</h4>
+                    <p>Danis Tri Yudha Tama</p>
+                </div>
+                <div class="neuro-card" data-aos>
+                    <div class="neuro-icon">📅</div>
+                    <h4>Born</h4>
+                    <p>Madiun, 28 Agustus 2008</p>
+                </div>
+                <div class="neuro-card" data-aos>
+                    <div class="neuro-icon">📍</div>
+                    <h4>Location</h4>
+                    <p>Caruban,Madiun, Indonesia</p>
+                </div>
+                <div class="neuro-card" data-aos>
+                    <div class="neuro-icon">🎓</div>
+                    <h4>Education</h4>
+                    <p>Smkn 1 Mejayan</p>
+                </div>
+                <div class="neuro-card" data-aos>
+                    <div class="neuro-icon">💡</div>
+                    <h4>Passion</h4>
+                    <p>Pelajar • XI RPL • Innovation</p>
+                </div>
+                <div class="neuro-card" data-aos>
+                    <div class="neuro-icon">🎯</div>
+                    <h4>Goal</h4>
+                    <p>Aspiring Entrepreneur (CEO)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey">
+            <button class="back-floating" onclick="navigateTo('home')">
+                <span>←</span>
+            </button>
+
+            <div class="section-header">
+                <h2 class="section-title gradient-text">My Journey</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025-2026</span>
+                        <h3>Present</h3>
+                        <p>Currently working on amazing projects and learning new technologies</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3>Major Achievement</h3>
+                        <p>Programming and Game Mastery</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <h3>Started Journey</h3>
+                        <p>When I was in 10th grade</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Orbs -->
+            <div class="skills-constellation">
+                <div class="skill-orb" data-skill="Creative">
+                    <span>Creative</span>
+                </div>
+                <div class="skill-orb" data-skill="Innovative">
+                    <span>Innovative</span>
+                </div>
+                <div class="skill-orb" data-skill="Passionate">
+                    <span>Passionate</span>
+                </div>
+                <div class="skill-orb" data-skill="Determined">
+                    <span>Determined</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect">
+            <button class="back-floating" onclick="navigateTo('home')">
+                <span>←</span>
+            </button>
+
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Let's Connect</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="connect-grid">
+                <div class="connect-orb" data-tilt onclick="window.open('https://instagram.com/yourusername', '_blank')">
+                    <div class="orb-inner">
+                        <div class="orb-icon">📷</div>
+                        <h3>Instagram</h3>
+                        <p>@dansskuyyyyy_</p>
+                    </div>
+                    <div class="orb-ripple"></div>
+                </div>
+
+                <div class="connect-orb" data-tilt onclick="window.open('https://tiktok.com/@yourusername', '_blank')">
+                    <div class="orb-inner">
+                        <div class="orb-icon">🎵</div>
+                        <h3>TikTok</h3>
+                        <p>@dnstriydha</p>
+                    </div>
+                    <div class="orb-ripple"></div>
+                </div>
+
+            
+
+                <div class="connect-orb" data-tilt onclick="window.open('mailto:your@email.com', '_blank')">
+                    <div class="orb-inner">
+                        <div class="orb-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>@danistriyudha</p>
+                    </div>
+                    <div class="orb-ripple"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <button class="back-floating" onclick="navigateTo('home')">
+                <span>←</span>
+            </button>
+
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Gallery</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-item large" data-aos>
+                    <img src="a.jpeg" alt="Photo 1">
+                    <div class="bento-overlay">
+                        <span class="bento-num">01</span>
+                    </div>
+                </div>
+                <div class="bento-item" data-aos>
+                    <img src="b.jpeg" alt="Photo 2">
+                    <div class="bento-overlay">
+                        <span class="bento-num">02</span>
+                    </div>
+                </div>
+                <div class="bento-item" data-aos>
+                    <img src="c.jpeg" alt="Photo 3">
+                    <div class="bento-overlay">
+                        <span class="bento-num">03</span>
+                    </div>
+                </div>
+                <div class="bento-item wide" data-aos>
+                    <img src="lnsdcp.jpg" alt="Photo 4">
+                    <div class="bento-overlay">
+                        <span class="bento-num">04</span>
+                    </div>
+                </div>
+                <div class="bento-item" data-aos>
+                    <img src="kcng.jpg" alt="Photo 5">
+                    <div class="bento-overlay">
+                        <span class="bento-num">05</span>
+                    </div>
+                </div>
+                <div class="bento-item tall" data-aos>
+                    <img src="profil.jpeg" alt="Photo 6">
+                    <div class="bento-overlay">
+                        <span class="bento-num">06</span>
+                    </div>
+                </div>
+                <div class="bento-item" data-aos>
+                    <img src="g.jpeg" alt="Photo 7">
+                    <div class="bento-overlay">
+                        <span class="bento-num">07</span>
+                    </div>
+                </div>
+                <div class="bento-item" data-aos>
+                    <img src="i.jpeg" alt="Photo 8">
+                    <div class="bento-overlay">
+                        <span class="bento-num">08</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
